@@ -1,11 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #f0f5e6
 }
 
 .navbar {
     padding: 20px;
-    background-color: #87a285;
+    background-color: #859e6f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +34,7 @@ main {
 footer {
     text-align: center;
     padding: 3px;
-    background-color: #daeed8;
+    background-color: #c5dbb8;
     bottom: 0;
     width: 100%
 }
