@@ -3,8 +3,10 @@
   src: url(Fonts/Patchwork\ Stitchlings.ttf); 
 }
 
+
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     text-align: center;
     background-color: #f0f5e6;
@@ -14,7 +16,7 @@ header {
     background-color: #f0f5e6;
     font-family: patchwork;
     font-size: 25px;
-    color:#233818;
+    color:#974b77;
 }
 
 nav {
@@ -46,11 +48,15 @@ img {
 }
 
 footer {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 1px;
     background-color: #c5dbb8;
     width: 100%;
     font-size: 13px;
     color:#293d1f; 
+}
+
+footer strong {
+    color:#974b77;
 }
