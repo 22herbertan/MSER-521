@@ -5,14 +5,20 @@ body {
 }
 
 .navbar {
-    padding: 20px;
-    background-color: #859e6f;
+    background-color: #748c67;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .navbar a, .navbar strong {
-    margin-right: 15px;
+    padding: 20px;
+    color: rgb(47, 47, 47);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #c5dbb8;
 }
 
 .photo-section {
