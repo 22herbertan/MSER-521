@@ -1,12 +1,20 @@
+@font-face {
+  font-family: patchwork;
+  src: url(Fonts/Patchwork\ Stitchlings.ttf); 
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     text-align: center;
+    background-color: #f0f5e6;
 }
 
 header {
     background-color: #f0f5e6;
-    padding: 10px;
+    font-family: patchwork;
+    font-size: 25px;
+    color:#233818;
 }
 
 nav {
@@ -44,4 +52,5 @@ footer {
     background-color: #c5dbb8;
     width: 100%;
     font-size: 13px;
+    color:#293d1f; 
 }
