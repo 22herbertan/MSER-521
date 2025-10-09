@@ -9,7 +9,7 @@ body {
 
 /* Your code here */
 header {
-    background-color: rgb(175, 214, 253);
+    background-color: rgb(71, 148, 226);
     padding: 20px;
 }
 
@@ -24,13 +24,33 @@ main {
 section {
     background-color: white;
     border: solid 1px gray;
+    transition: all 0.5s;
 }
 
 img {
     width: 100%;
 }
 
+section:hover {
+    opacity: 1;
+    transform: rotate(5deg);
+    background-color:rgb(204, 229, 254);
+}
+
 section p {
     text-align: center;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: rgb(71, 148, 226)
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        background-color: #EEE;
+        padding: 50px;
+    }   
 }
