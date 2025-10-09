@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body * {
+    border: solid 1px black;
+    padding: 5px;
+} */
+
+/* Your code here */
+header {
+    background-color: rgb(175, 214, 253);
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    background-color: #EEE;
+    padding: 50px;
+}
+
+section {
+    background-color: white;
+    border: solid 1px gray;
+}
+
+img {
+    width: 100%;
+}
+
+section p {
+    text-align: center;
+    padding-bottom: 20px;
+}
