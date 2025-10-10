@@ -1,0 +1,22 @@
+@font-face {
+    font-family: roboto;
+    src: url(../Fonts/Roboto-Regular.ttf)
+}
+
+body {
+    background-color:#c5dbb8;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-family: roboto;
+    font-size: 40px;
+}
+
+div {
+    padding: 5px;
+}
