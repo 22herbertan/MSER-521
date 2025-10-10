@@ -8,19 +8,29 @@
     src: url("../Fonts/Very Popular.ttf")
 }
 
+@font-face {
+    font-family: roboto;
+    src: url(../Fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: roboto-b;
+    src: url(../Fonts/Roboto-Bold.ttf)
+}
+
 body {
     background-color: #f0f5e6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: roboto;
 }
 
 button {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: roboto;
 }
 
 h1 {
     color: #2c4118;
-    font-family: popular;
-    font-size: 40px;
+    font-family: roboto-b;
+    font-size: 50px;
     text-align: center;
 }
 

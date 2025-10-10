@@ -12,9 +12,14 @@ header {
     padding: 10px;
 }
 
+button {
+    font-family: roboto;
+}
+
 h1 {
     font-family: roboto;
     font-size: 40px;
+    color:#2c4118
 }
 
 div {

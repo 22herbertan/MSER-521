@@ -1,5 +1,10 @@
+@font-face {
+    font-family: roboto;
+    src: url("Fonts/Roboto-Regular")
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto;
     margin: 0;
     background-color: #f0f5e6
 }
@@ -9,12 +14,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
 }
 
-.navbar a, .navbar strong {
+.navbar a{
     padding: 20px;
     color: rgb(47, 47, 47);
     text-decoration: none;
+}
+
+.navbar strong {
+    padding: 20px;
+    color: #c5dbb8;
 }
 
 .navbar a:hover {
@@ -35,6 +46,10 @@ main {
     padding-right: 10vw;
     padding-left: 10vw;
     padding-bottom: 50px;
+}
+
+button {
+    font-family: roboto;
 }
 
 footer {

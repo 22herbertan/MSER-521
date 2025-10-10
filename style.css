@@ -3,10 +3,13 @@
   src: url(Fonts/Patchwork\ Stitchlings.ttf); 
 }
 
-
+@font-face {
+    font-family: roboto;
+    src: url(Fonts/Roboto-Regular.ttf);
+}
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: roboto;
     margin: 0;
     text-align: center;
     background-color: #f0f5e6;
@@ -48,7 +51,7 @@ img {
 }
 
 footer {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: roboto;
     text-align: center;
     padding: 1px;
     background-color: #c5dbb8;
