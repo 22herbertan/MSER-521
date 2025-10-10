@@ -43,6 +43,7 @@ nav {
 .navbar a:hover {
     background-color:#c5dbb8;
     color: white;
+    cursor: url(https://cur.cursors-4u.net/others/oth-4/oth306.cur), auto !important;
 }
 
 img {
@@ -63,3 +64,5 @@ footer {
 footer strong {
     color:#974b77;
 }
+
+* {cursor: url(https://cur.cursors-4u.net/others/oth-8/oth710.cur), auto !important;}
