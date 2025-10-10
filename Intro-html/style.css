@@ -1,10 +1,33 @@
+@font-face {
+    font-family: pirate;
+    src: url("../Fonts/PirataOne-Regular.ttf")
+}
+
+@font-face {
+    font-family: popular;
+    src: url("../Fonts/Very Popular.ttf")
+}
+
 body {
     background-color: #f0f5e6;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
-    color: #567739;
+    color: #2c4118;
+    font-family: popular;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: pirate;
+    font-size: 30px;
+    color:#242424
 }
 
 img {
