@@ -4,12 +4,13 @@
 }
 
 body {
-    background-color:#c5dbb8;
+    background-color:#ffffff;
 }
 
 header {
     text-align: center;
     padding: 10px;
+    background-color:#c5dbb8;
 }
 
 button {
