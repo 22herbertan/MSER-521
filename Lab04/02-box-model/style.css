@@ -15,9 +15,30 @@ justify-content and align-items properties to center the card.
 */
 main {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 /*
 Part 1: Create some style blocks to style the card. 
     Experiment with: border, padding, margin, height, and width.
 */
+
+* {
+     box-sizing: border-box;
+ }
+
+.card {
+    border: solid 2px rgb(209, 208, 208);
+    margin: 10px;
+    width: 301px;
+    height: 450px;
+}
+
+
+p, h2 {
+    padding-left: 10px;
+}
+
+
+
