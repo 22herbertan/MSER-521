@@ -1,5 +1,20 @@
 /* Make sure that your @import statement is at the top of your CSS file  */
 
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grenze-gotisch {
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 html {
     scroll-behavior: smooth;
@@ -12,4 +27,12 @@ body * {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+}
+
+h1 {
+    font-family: "Pirata One"
+}
+
+h2 {
+    font-family: "Grenze Gotisch"
 }
