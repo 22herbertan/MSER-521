@@ -3,9 +3,9 @@
 const rhoadesRobinsonHall = [35.61572, -82.56562];
 
 const map = L.map('map');
-map.setView(rhoadesRobinsonHall, 18);
+map.setView(rhoadesRobinsonHall, 20); // set zoom view & zoom level
 
-const currentTileLayer = L.tileLayer(toner, {
+const currentTileLayer = L.tileLayer(outdoors, { // outdoors = basemap
   attribution: '&copy; Open Street Map contributors',
 }).addTo(map);
 

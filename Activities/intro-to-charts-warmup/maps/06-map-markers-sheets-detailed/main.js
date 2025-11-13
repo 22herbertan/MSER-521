@@ -40,11 +40,12 @@ async function generateMarkers() {
 function getTemplate(landmark) {
   return `
       <div>
-          <div style="font-size:40px;">${landmark.icon}</div>
+          <div class = "emoji">${landmark.icon}</div>
           <h3 style="margin: 0 0 5px 0;">${landmark.name}</h3>
           <p style="margin: 0; font-size: 12px; color: #666;">
           Type: ${landmark.category.replace('_', ' ').toUpperCase()}
           </p>
+          <img src = "${landmark.online_image}"/>
           <p style="margin: 5px 0 0 0; font-size: 11px; color: #999;">
           ${landmark.lat.toFixed(4)}, ${landmark.lng.toFixed(4)}
           </p>
@@ -57,8 +58,8 @@ function getIcon(color, icon) {
     className: 'custom-div-icon',
     html: `<div style="background-color: ${color}"
       class="map-marker">${icon}</div>`,
-    iconSize: [50, 50],
-    iconAnchor: [25, 25],
+    iconSize: [35, 35],
+    iconAnchor: [17.5, 17.5],
   });
 }
 

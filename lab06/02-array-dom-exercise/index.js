@@ -18,8 +18,11 @@ const imagePathList = [
 ];
 
 // TODO: Select the container element with class "cards"
-// const cardsContainer = document.querySelector('.cards');
+const cardsContainer = document.querySelector('.cards');
 
 // TODO: Loop through the imagePathList array using a for...of loop
+for (const images of imagePathList) {
+  cardsContainer.innerHTML+= `<img src = "${images}" alt = "flower"/>`;
+}
 // TODO: For each image path, create an <img> element with src and alt attributes
 // TODO: Add each image to the container using innerHTML +=

@@ -4,8 +4,8 @@ body {
 }
 
 .map-marker { 
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: 2px solid white;
     display: flex;
@@ -31,6 +31,10 @@ body {
     padding: 20px;
     width: 100%; 
 }   
+
+.emoji {
+    font-size: 100px;
+}
 
 .details-content {
     padding: 20px;
