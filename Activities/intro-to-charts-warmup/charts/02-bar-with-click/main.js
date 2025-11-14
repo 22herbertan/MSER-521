@@ -15,9 +15,17 @@ const options = {
 };
 
 function getDetails(event, chartContext, config) {
-  const dataIndex = config.dataPointIndex; // get the index of the clicked point
-  console.log(dataIndex);
-
+  const slot = config.dataPointIndex; // get the index of the clicked point
+  console.log(slot); // column index
+  console.log(chartData[slot]); // num of snow days
+  console.log(categories[slot]); // month
+  const panel = document.querySelector("#details");
+  const snowDays = categories[slot];
+  const month = chartData[slot];
+  panel.innerHTML = `
+    <h1>${snowDays}</h1>
+    <p>Snow days: ${month}</p>
+  `;
   // 1. How do you get the value of the clicked point?
   // 2. How do you get the category of the clicked point?
   // 3. How do you output the value and label to the details panel?
