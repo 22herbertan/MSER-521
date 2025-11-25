@@ -1,0 +1,19 @@
+#section-3 {
+  background-image: url(../images/section-3-bkg.png);
+  background: no-repeat center top / 100% auto;
+  padding: 120px 0;
+}
+
+#section-3 .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+#section-3 .grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  row-gap: 6rem;
+}
+
+/* TODO: Add responsive CSS here */
