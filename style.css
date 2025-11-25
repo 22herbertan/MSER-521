@@ -57,6 +57,7 @@ header {
   padding: 14px 16px;
   color: #c5dbb8;
   background-color: inherit;
+  font-size: 11pt;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }

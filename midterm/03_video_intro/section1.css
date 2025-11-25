@@ -28,5 +28,30 @@
 }
 
 /* TODO: Add video-label styles here */
+.video-label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 5;
+}
 
 /* TODO: Add responsive CSS here */
+@media screen and (max-width: 1000px) {
+    #section-1 {
+        grid-template-columns: 1fr;
+    }
+    /* TODO: Add the remaining responsive styles here */
+
+    #section-1 .media {
+      max-width: 100%;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+    .content-styles {
+      padding: 20px 20px;
+    }
+}
