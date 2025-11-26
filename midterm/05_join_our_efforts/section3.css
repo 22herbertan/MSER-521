@@ -1,6 +1,7 @@
 #section-3 {
   background-image: url(../images/section-3-bkg.png);
-  background: no-repeat center top / 100% auto;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   padding: 120px 0;
 }
 
@@ -17,3 +18,20 @@
 }
 
 /* TODO: Add responsive CSS here */
+@media screen and (max-width: 1024px) {
+    #section-3 {
+        padding: 60px 0;
+    }
+    #section-3 .grid {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+    }
+    #section-3 .container {
+      grid-template-columns: 1fr;
+    }
+    #media {
+      height: 48px;
+    }
+    /* TODO: Add the remaining responsive styles here */
+
+}

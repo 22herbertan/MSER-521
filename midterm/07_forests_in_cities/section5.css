@@ -30,3 +30,48 @@
 }
 
 /* TODO: Add responsive CSS here */
+@media screen and (max-width: 1024px) {
+  .heading-1.mega {
+    color: black;
+    font-size: 3rem;
+  }
+
+  #section-5 {
+    background-image: none;
+    padding-top: 16vw;
+  }
+
+  #section-5 .container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .heading-1.mega {
+    color: black;
+    font-size: 2rem;
+  }
+
+  #section-5 {
+    background-image: none;
+    padding-top: 8vw;
+  }
+
+  #section-5 .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .cards {
+    gap: 4rem;
+  }
+
+  .large {
+    font-size: 1rem;
+  }
+
+  .heading-4 {
+    font-size: 1rem;
+  }
+}
