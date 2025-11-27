@@ -29,7 +29,11 @@ async function createChart() {
         dataPointSelection: getDetails,
       },
     },
-    colors: ['hotpink', '#3357FF'], // series 1 and series 2 colors
+    title: {
+    text: 'Annual Number of Snow Days',
+    align: 'center',
+    },
+    colors: ['#4f7a97ff', '#a9b8fbff'], // series 1 and series 2 colors
     plotOptions: {
       bar: {
         horizontal: false,
