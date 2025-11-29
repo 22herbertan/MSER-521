@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/Poppins-Regular.ttf); 
+}
+
+@font-face {
+  font-family: 'selima';
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/Selima\ .ttf); 
+}
+
+.body {
+  margin-top: 150px;
+}
+
+/* Navigation section */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 30px;
+  background-color: white;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-links {
+    color: black;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('images/Creek.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+    font-family: 'selima';
+    font-size: 6rem;
+}
