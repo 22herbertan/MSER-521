@@ -6,14 +6,15 @@
 }
 
 @font-face {
-  font-family: 'selima';
+  font-family: 'playfair';
   font-style: normal;
   font-weight: 300;
-  src: url(fonts/Selima\ .ttf); 
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf); 
 }
 
 .body {
   margin-top: 150px;
+  background-color: white;
 }
 
 /* Navigation section */
@@ -44,6 +45,73 @@ header {
 }
 
 .hero h1 {
-    font-family: 'selima';
-    font-size: 6rem;
+    font-family: 'playfair';
+    font-size: 5rem;
+}
+
+/* About section */
+#section-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  align-items: self-start;
+}
+
+#section-1 .column {
+  max-width: 20vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  aspect-ratio: 5 / 4;
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+#section-1 a,
+#section-1 a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#section-1 h2 {
+  color: #b2d85b;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+
+.content-styles {
+  padding: 80px 80px;
+}
+
+.cover-image {
+    height: 400px;
+    width: 600px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+#section-1 .heading-4 {
+    font-size: 1.5rem;
+    margin-left: 70px;
+}
+
+#section-1 .large {
+    font-size: 1rem;
+    margin-left: 70px;
+}
+
+.video-label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 5;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 }
