@@ -57,13 +57,15 @@ header {
   align-items: self-start;
 }
 
-#section-1 .column {
-  max-width: 20vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  aspect-ratio: 5 / 4;
-  margin-top: 150px;
+#section-1 .media {
+  max-width: 40vw;
+  margin-top: 80px;
   margin-left: 80px;
+}
+
+#section-1 .video-label:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
 }
 
 #section-1 a,
@@ -76,6 +78,7 @@ header {
   color: #b2d85b;
   margin-bottom: 10px;
   margin-left: 70px;
+  font-size: 1rem;
 }
 
 .content-styles {
@@ -85,12 +88,10 @@ header {
 .cover-image {
     height: 400px;
     width: 600px;
-    margin-top: 60px;
-    margin-left: 60px;
 }
 
-#section-1 .heading-4 {
-    font-size: 1.5rem;
+#section-1 h3 {
+    font-size: 1rem;
     margin-left: 70px;
 }
 
@@ -102,11 +103,109 @@ header {
 .video-label {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   position: absolute;
-  bottom: 24px;
-  left: 24px;
+  color: white;
+  top: 150px;
+  right: 200px;
   z-index: 5;
+}
+
+#section-1 .btn.primary {
+    display: inline-block;
+    align-items: end;
+    color: black;
+}
+
+.video-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  color: white;
+  top: 150px;
+  right: 200px;
+  z-index: 5;
+}
+
+/* Explore sites section */
+#section-2 {
+  background-image: url(../images/section-2-bkg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 200px;
+}
+
+#section-2 .heading-1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#section-2 .large {
+  text-align: center;
+}
+
+#section-2 .grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+#section-3 .media {
+  margin-right: 0px;
+}
+
+/* Learn more section */
+#section-4 {
+  background-image: url(images/salamander.png);
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.heading-1.mega {
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#section-4 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+#section-4 .container .btn-container.card {
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-color: #1B2239;
+  border-width: 4px;
+}
+
+.cards {
+  display: grid;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+#section-4 .container .image {
+  margin-top: 0px;
+}
+
+/* Thank you section */
+#section-5 .container {
+  background-color: #1B2239;
+  color: white;
+  padding: 40px;
+  margin-top: 0px;
 }
 
 /* Media queries */

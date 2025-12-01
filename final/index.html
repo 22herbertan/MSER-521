@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VWIN Dashboard</title>
     <link rel="stylesheet" href="utility-classes.css"> 
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="nav.js" defer></script> 
+    <script src="scroll-effects.js" defer></script> 
+    <script type="module" src="https://js.arcgis.com/4.34/embeddable-components/"></script>
 </head>
 <body>
     <header>
@@ -24,9 +27,9 @@
                     </div>
                         <div class="nav-links">
                             <a href="#section-1">About</a>
-                            <a href="#section-2">Explore Sites</a>
+                            <a href="#section-2">Find Your Site</a>
                             <a href="#section-3">Site Map</a>
-                            <a href="#section-4">Download Reports</a>
+                            <a href="#section-4">Learn More</a>
                         </div>
                     </div>
                     <div class="right">
@@ -62,19 +65,21 @@
              ============================================ -->
             <section id="section-1" class="panel">
             <div>
-                <div class="container">
-                    <div class="video">
-                    </div>
+            <a href="https://naturalareasnyc.org/nyc-nature-map/" class="btn primary">VWIN Protocol Video</a>
+                <div class="media">
+                    <a href="https://www.youtube.com/watch?v=XsveNQ5-S64" title="← Watch VWIN Protocol Video">
+                        <div class="cover-image">
+                            <img width="1024" height="573" src="https://eqilab.org/wp-content/uploads/equip-1-scaled.jpg" alt="VWIN Protocol Video">
+                        </div>
                             <span class="video-label">
                                  <span class="btn icon play large"></span>
-                                 <span class="heading-4">Watch Video</span>
                             </span>
                     </a>
                 </div>
             </div>
             <article class="content-styles">
                 <h2 class="eyebrow" data-scroll="fade-in">About VWIN</h2>
-                <h3 class="heading-4" data-scroll="fade-in" data-scroll-delay="200">Founded in 1990, the Volunteer Water Information Network (VWIN) is a volunteer-based, surface water monitoring program. Trained volunteers collect water samples from rivers and lakes in the French Broad, Watauga, Catawba, Broad, New, and Little Tennessee River Basins. Samples are then analyzed at EQI's state-certified laboratory for 8 different parameters: 
+                <h3 class="large" data-scroll="fade-in" data-scroll-delay="200">Founded in 1990, the Volunteer Water Information Network (VWIN) is a volunteer-based, surface water monitoring program. Trained volunteers collect water samples from rivers and lakes in the French Broad, Watauga, Catawba, Broad, New, and Little Tennessee River Basins. Samples are analyzed at EQI's state-certified laboratory for 8 different parameters: 
                 </h3>
                 <ul class="large">
                     <li>pH</li>
@@ -91,24 +96,264 @@
             </article>
             </section>
         <!-- ============================================
-             EXPLORE SITES SECTION
+             FIND YOUR SITE SECTION
              ============================================ -->
              <section id="section-2" class="panel">
-
+                <h2 class="heading-1" data-scroll="fade-in">Find Your Site</h2>
+                <p class="large">Select a county or community below to view its sampling sites. Printable reports are available with site descriptions and the most recent VWIN water quality data.</p>
+             </br>
+                <div class="grid">
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/Frenchbroad.JPG" alt="French Broad River">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Buncombe</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Buncombe Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/BlowingRock.jpg" alt="Blowing Rock off the Blue Ridge Parkway, Photo: John McTarnaghan, https://flic.kr/p/8LcrLH, CC License: https://creativecommons.org/licenses/by/2.0/">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Caldwell</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Caldwell Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/CandlerLake.jpg" alt="Lake in Candler, NC">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Enka Lake</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Enka Lake Lakes</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/PigeonRiver.jpg" alt="Pigeon River, Photo: Gary Peeples/USFWS, https://www.flickr.com/photos/usfwssoutheast/21787281095, CC License: https://creativecommons.org/licenses/by/2.0/deed.en">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Haywood</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Haywood Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/Henderson.jpg" alt="French Broad River in Henderson, NC, Photo: Pollinator, https://en.wikipedia.org/wiki/French_Broad_River#/media/File:French_broad_river_9228.JPG, License: https://creativecommons.org/licenses/by-sa/3.0/">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Henderson</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Henderson Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/DryFalls.jpg" alt="Dry Falls in Highlands, NC, Photo: Milton Heard, CC License: https://creativecommons.org/publicdomain/mark/1.0/deed.en">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Highlands-Cashiers Land Trust (HCLT)</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Highlands-Cashiers Land Trust (HCLT) Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/LakeDucks.jpg" alt="Ducks swimming in lake">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Lake Glenville</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Lake Glenville Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/LakeJames.jpeg" alt="Lake James">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Lake James</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Lake James Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/lakelure.jpg" alt="Boats at Lake Lure, Photo: Michael James, CC License: https://creativecommons.org/publicdomain/zero/1.0/">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Lake Lure</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Lake Lure Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/CACreek.jpg" alt="">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Madison</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Madison Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/KickNet.jpg" alt="Sampling kick net in river">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">New River</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View New River Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/WaterFlowing.JPG" alt="Long exposure river water flowing">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Polk</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Polk Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/ChimneyFalls.png" alt="Chimney Rock Falls, Photo: Elliot Mahan, CC License: https://creativecommons.org/publicdomain/zero/1.0/deed.en">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Rumbling Bald</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Rumbling Bald Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/LookingGlass.jpg" alt="Looking Glass Falls, Photo: Mark Steele, License: https://creativecommons.org/publicdomain/mark/1.0/">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Transylvania</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Transylvania Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/Tuckasegee.jpg" alt="Tuckasegee River, Photo: Matthew T. Bradley, https://en.wikipedia.org/wiki/Tuckasegee_River#/media/File:Looking_up_the_Tuckasegee.jpg, CC License: https://creativecommons.org/licenses/by/2.0/">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Tuckasegee</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Tuckasegee Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="card vertical-card carousel-card" href="#">
+                        <div class="media fancy-boxes">
+                            <img src="images/Waterfall-2.jpg" alt="Watauga River">
+                        </div>
+                        <article>
+                            <span class="caption">UPDATED: Oct 27, 2025</span>
+                            <h3 class="heading-5">Watauga</h3>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">View Watauga Sites</span>
+                            </span>
+                        </article>
+                    </a>
+                    <!-- <img width="400" height="400"src="https://eqilab.org/wp-content/uploads/VWIN-logo-black.png"/> -->
+                </div>
              </section>
-            </section>
         <!-- ============================================
              SITE MAP SECTION
              ============================================ -->
              <section id="section-3" class="panel">
-
+                <h2 class="heading-1" data-scroll="fade-in">Explore a Map</h2>
+                 <div class="container">
+                    <div class="container" data-scroll="slide-right">
+                        <div class="media">
+                            <!-- <img src="../images/callout1.jpg" alt="Embed site map here"> -->
+                            <arcgis-embedded-map style="height:600px;width:700px;" item-id="0a4b59ed64da4bdaa838640c4667fee9" theme="light" center="-82.37679002799015,35.70593906031256"scale="1155581.108577" portal-url="https://unca.maps.arcgis.com"></arcgis-embedded-map>
+                        </div>
+                        <article>
+                            <h2>VWIN Sites</h2>
+                            <p class="large">Visit an interactive map of VWIN sites to learn about water quality in your neighborhood.</p>
+                            <a href="https://naturalareasnyc.org/nyc-nature-map/" class="btn primary">Explore Now</a>
+                        </article>
+                    </div>
              </section>
         <!-- ============================================
-             DOWNLOAD REPORTS SECTION
+             LEARN MORE SECTION
              ============================================ -->
-             <section id="section-4" class="panel">
-
-             </section>
+        <section id="section-4">
+            <h2 class="heading-1 mega" data-scroll="fade-in">Learn More</h2>
+             <div class="container">
+                <div class="cards" data-scroll="slide-up" data-scroll-delay="100">
+                    <!-- TODO: Add 2 text-only cards here using the pattern from style guide -->
+                     <a class="btn-container card" href="https://naturalareasnyc.org/forests-in-cities-network/">
+                        <article>
+                            <h3 class="heading-4">How were VWIN ratings this year?</h3>
+                            <p class="large">VWIN ratings are calculated for 3-year periods. See how the past three years have compared to prior years at your site.</p>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">FiC</span>
+                            </span>
+                        </article>
+                    </a>
+                    <a class="btn-container card" href="https://public.tableau.com/app/profile/ann.marie.traylor/viz/testVWIN/Turbidity">
+                        <article>
+                            <h3 class="heading-4">Explore the Helene Dashboard</h3>
+                            <p class="large">Compare VWIN water quality parameters before and after Hurricane Helene at your site.</p>
+                            <span class="btn icon arrow">
+                                <span class="accessibility">Explore the Helene Dashboard</span>
+                            </span>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================
+             THANK YOU SECTION
+             ============================================ -->
+        <section id="section-5">
+            <div class="container">
+                <h3 class="heading-4" data-scroll="fade-in">Thank you, VWIN Volunteers!</h2> 
+                <p class="heading-6"> If you have any questions or would like to share VWIN site photos, please email us at staff@eqilab.org. </p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
