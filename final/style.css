@@ -152,7 +152,7 @@ header {
 }
 
 /* Site map section */
-#section-3 .grid {
+#section-3 .mapgrid {
   display: grid;
   grid-template-columns: auto 400px;
 }
