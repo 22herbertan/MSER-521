@@ -1,28 +1,29 @@
 // initialize the map:
 const map = L.map('map');
-map.setView([35.5362825, -82.5654144], 10);
+map.setView([35.7362825, -82.5654144], 9);
 
 // add the tile layer to the map:
-const currentTileLayer = L.tileLayer(watercolor, {
+const currentTileLayer = L.tileLayer(terrain, {
   attribution: '&copy; Open Street Map contributors',
 }).addTo(map);
-
-const icon = '../images/water-icon.png';
-const color = 'white';
 
 // retrieve coordinates from Google Sheets:
 const detailsElement = document.querySelector('#details');
 async function getChartData() {
   const sheetName = 'VWINCoordinates';
   const response = await fetch(
-    `https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbyKNAa0glXuL_enuIUsGIzQ_JzcxsCIvzGJsaE0z-MDJO2f-0PRYTmiOnGX47b448vV/exec?sheet=${sheetName}`
+    `https://script.google.com/macros/s/AKfycbyKNAa0glXuL_enuIUsGIzQ_JzcxsCIvzGJsaE0z-MDJO2f-0PRYTmiOnGX47b448vV/exec?sheet=${sheetName}`
   );
   const sites = await response.json();
   console.log('serverData: ', sites);
   return sites;
 }
 
-function getIcon(color, icon) {
+const icon = L.icon ({
+    iconUrl: '../images/water-icon.png'
+});
+
+function getIcon(icon) {
     return L.divIcon({
         html: `
             <div style="background-color: white" class="map-marker">
@@ -41,7 +42,7 @@ async function generateMarkers() {
   for (const site of sites) {
     // Create marker:
     const marker = L.marker([site.LAT, site.LON], {
-    icon: getIcon(site.color, site.icon),  // here is the place where you override the default marker with your own custom style
+    icon: getIcon(site.icon),  // here is the place where you override the default marker with your own custom style
 }).addTo(map);
 
     marker.bindPopup(getPopupTemplate(site));
@@ -66,7 +67,7 @@ function getPanelTemplate(site) {
       <div>
           <h3>${site.Name}</h3>
           <p class="tag">
-            ${site.County_Code.replace('_', ' ')}
+            ${site.County.replace('_', ' ')} County
           </p>
           <p>${site.Description}</p>
           <img src=${site.Image}/>
