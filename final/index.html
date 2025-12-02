@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="utility-classes.css"> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="scroll-effects.css">
+    <!-- javascript for nav bar -->
     <script src="nav.js" defer></script> 
-    <script src="scroll-effects.js" defer></script> 
-    <script type="module" src="https://js.arcgis.com/4.34/embeddable-components/"></script>
+    <!-- javascript for scrolling effects -->
+    <script src="scroll-effects.js" defer></script>
+    <!-- javascript for map -->
+    <script src="VWINmap/main.js" defer></script> 
+    <!-- javascript for basemap styles -->
+    <script src="VWINmap/tilesets.js" defer></script>
 </head>
 <body>
     <header>
@@ -312,8 +317,7 @@
                     <div class="container" data-scroll="slide-right">
                         <div class="media">
                             <!-- <img src="../images/callout1.jpg" alt="Embed site map here"> -->
-                            <arcgis-embedded-map style="height:600px;width:700px;" item-id="0a4b59ed64da4bdaa838640c4667fee9" theme="light" center="-82.37679002799015,35.70593906031256"scale="1155581.108577" portal-url="https://unca.maps.arcgis.com"></arcgis-embedded-map>
-                        </div>
+                            </div>
                         <article>
                             <h2>VWIN Sites</h2>
                             <p class="large">Visit an interactive map of VWIN sites to learn about water quality in your neighborhood.</p>
