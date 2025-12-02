@@ -19,8 +19,9 @@ async function getChartData() {
   return sites;
 }
 
-const icon = L.icon ({
-    iconUrl: '../images/water-icon.png'
+const customIcon = L.icon ({
+    iconUrl: 'water-icon.png',
+    iconSize: [50, 50]
 });
 
 function getIcon(icon) {
@@ -42,7 +43,7 @@ async function generateMarkers() {
   for (const site of sites) {
     // Create marker:
     const marker = L.marker([site.LAT, site.LON], {
-    icon: getIcon(site.icon),  // here is the place where you override the default marker with your own custom style
+    icon: customIcon,  // here is the place where you override the default marker with your own custom style
 }).addTo(map);
 
     marker.bindPopup(getPopupTemplate(site));
