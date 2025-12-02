@@ -19,19 +19,14 @@ async function getChartData() {
   return sites;
 }
 
-const customIcon = L.icon ({
-    iconUrl: 'water-icon.png',
-    iconSize: [50, 50]
-});
-
-function getIcon(icon) {
+function getIcon() {
     return L.divIcon({
         html: `
             <div style="background-color: white" class="map-marker">
-                ${icon}
+                <img class="customIcon" src="water-icon.png">
             </div>
         `,
-        iconSize: [50, 50],
+        iconSize: [30, 30],
         iconAnchor: [25, 25],
     });
 }
@@ -43,7 +38,7 @@ async function generateMarkers() {
   for (const site of sites) {
     // Create marker:
     const marker = L.marker([site.LAT, site.LON], {
-    icon: customIcon,  // here is the place where you override the default marker with your own custom style
+    icon: getIcon(),  // here is the place where you override the default marker with your own custom style
 }).addTo(map);
 
     marker.bindPopup(getPopupTemplate(site));
@@ -58,7 +53,7 @@ async function generateMarkers() {
 function getPopupTemplate(site) {
   return `
         <div>
-            ${site.icon} ${site.Name}<br>
+            ${site.VWIN_Site}: ${site.Name}<br>
         </div>
     `;
 }
@@ -66,7 +61,7 @@ function getPopupTemplate(site) {
 function getPanelTemplate(site) {
   return `
       <div>
-          <h3>${site.Name}</h3>
+          <h3>${site.VWIN_Site}:  ${site.Name}</h3>
           <p class="tag">
             ${site.County.replace('_', ' ')} County
           </p>
