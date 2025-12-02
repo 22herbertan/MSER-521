@@ -11,7 +11,9 @@
     <script src="nav.js" defer></script> 
     <!-- javascript for scrolling effects -->
     <script src="scroll-effects.js" defer></script>
-    <!-- javascript for map -->
+    <!-- javascript for leaflet map library -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- javascript for map functions -->
     <script src="VWINmap/main.js" defer></script> 
     <!-- javascript for basemap styles -->
     <script src="VWINmap/tilesets.js" defer></script>
@@ -315,9 +317,10 @@
                 <h2 class="heading-1" data-scroll="fade-in">Explore a Map</h2>
                  <div class="container">
                     <div class="container" data-scroll="slide-right">
-                        <div class="media">
-                            <!-- <img src="../images/callout1.jpg" alt="Embed site map here"> -->
-                            </div>
+                        <div class="grid">
+                            <div id="map" class="map"></div>
+                            <div id="details" class="details">Loading...</div>
+                        </div>
                         <article>
                             <h2>VWIN Sites</h2>
                             <p class="large">Visit an interactive map of VWIN sites to learn about water quality in your neighborhood.</p>
