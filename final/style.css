@@ -151,6 +151,7 @@ header {
   gap: 2rem;
 }
 
+/* Site map section */
 #section-3 .media {
   margin-right: 0px;
 }
@@ -209,8 +210,44 @@ header {
 }
 
 /* Media queries */
+
+/* Navigation section */
+@media screen and (max-width: 768px) {
+  .logo {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0px;
+    height: 0px;
+  }
+}
+
+/* About section */
+
+/* Hero section */
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
   }
+}
+
+
+/* About section */
+@media screen and (max-width: 1024px) {
+    #section-1 {
+        grid-template-columns: 1fr;
+    }
+    
+    #section-1 .media {
+      max-width: 100%;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+    .content-styles {
+      padding: 40px 30px;
+    }
 }
