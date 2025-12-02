@@ -3,7 +3,7 @@ const map = L.map('map');
 map.setView([35.7362825, -82.5654144], 9);
 
 // add the tile layer to the map:
-const currentTileLayer = L.tileLayer(terrain, {
+const currentTileLayer = L.tileLayer(outdoors, {
   attribution: '&copy; Open Street Map contributors',
 }).addTo(map);
 
@@ -26,7 +26,7 @@ function getIcon() {
                 <img class="customIcon" src="water-icon.png">
             </div>
         `,
-        iconSize: [30, 30],
+        iconSize: [20, 20],
         iconAnchor: [25, 25],
     });
 }
@@ -53,7 +53,7 @@ async function generateMarkers() {
 function getPopupTemplate(site) {
   return `
         <div>
-            ${site.VWIN_Site}: ${site.Name}<br>
+            <b>Site  ${site.VWIN_Site}</b>: ${site.Name}<br>
         </div>
     `;
 }
