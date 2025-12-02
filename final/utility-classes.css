@@ -510,7 +510,6 @@ svg:not(:root) {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(44deg, rgba(15, 16, 16, 0.5) 37.73%, rgba(15, 16, 16, 0) 52.35%);
 }
 
 .hero:after {
@@ -520,7 +519,6 @@ svg:not(:root) {
   left: 0;
   width: 100%;
   height: 400px;
-  background: linear-gradient(180deg, rgba(15, 16, 16, 0.7) 11.98%, rgba(15, 16, 16, 0) 76.69%);
 }
 
 .hero h1 {
