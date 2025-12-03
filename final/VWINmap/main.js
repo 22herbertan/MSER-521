@@ -4,7 +4,7 @@ map.setView([35.7362825, -82.5654144], 9);
 
 // add the tile layer to the map:
 const currentTileLayer = L.tileLayer(outdoors, {
-  attribution: '&copy; Open Street Map contributors',
+  attribution: '&copy; Stadia Maps',
 }).addTo(map);
 
 // retrieve coordinates from Google Sheets:
