@@ -66,7 +66,7 @@ function getPanelTemplate(site) {
             ${site.County.replace('_', ' ')} County
           </p>
           <p>${site.Description}</p>
-          <img src=${site.Image}/>
+          <img src=${site.Photo}/>
           <p>
             <strong>Coordinates:</strong> ${site.LAT.toFixed(4)}, ${site.LON.toFixed(4)}
           </p>
