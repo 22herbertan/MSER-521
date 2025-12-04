@@ -16,3 +16,8 @@
     width: 700px;
     height: auto;
 }
+
+#section-5 .btn.primary {
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
