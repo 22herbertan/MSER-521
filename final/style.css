@@ -128,6 +128,41 @@ header {
   z-index: 5;
 }
 
+ /* Accordion buttons */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: solid;
+  border-color: white;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Accordion hover */
+.active, .accordion:hover {
+  background-color: #a8cbfb;
+}
+
+/* Accordion panel; hidden by default */
+.accordionPanel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+} 
+
+/* Dashed border */
+hr.dashed {
+  border: 3px solid #1b2239;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
 /* Explore sites section */
 #section-2 {
   background-image: url(../images/section-2-bkg.png);
@@ -139,7 +174,7 @@ header {
 
 #section-2 .heading-1 {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 #section-2 .large {
