@@ -75,7 +75,7 @@ header {
 }
 
 #section-1 h2 {
-  color: #b2d85b;
+  color: var(--baby-blue);
   margin-bottom: 10px;
   margin-left: 70px;
   font-size: 1rem;
