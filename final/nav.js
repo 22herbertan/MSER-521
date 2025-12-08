@@ -30,16 +30,13 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
+    // Toggle "active" class on the clicked accordion button
     this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
+    // Get the associated panel (next sibling)
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+
+    // Toggle the "active" class on the panel to show/hide it via CSS
+    panel.classList.toggle("active");
   });
-} 
+}
