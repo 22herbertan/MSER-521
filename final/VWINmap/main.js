@@ -53,7 +53,7 @@ async function generateMarkers() {
 function getPopupTemplate(site) {
   return `
         <div>
-            <b>Site  ${site.VWIN_Site}</b>: ${site.Name}<br>
+            <b>${site.County_Code}${site.VWIN_Site}</b>: ${site.Name}<br>
         </div>
     `;
 }
@@ -61,14 +61,13 @@ function getPopupTemplate(site) {
 function getPanelTemplate(site) {
   return `
       <div>
-          <h3>${site.VWIN_Site}:  ${site.Name}</h3>
+          <h3>${site.County_Code}${site.VWIN_Site}:  ${site.Name}</h3>
           <p class="tag">
             ${site.County.replace('_', ' ')} County
           </p>
           <p>${site.Description}</p>
-          <img src=${site.Photo}/>
           <p>
-            <strong>Coordinates:</strong> ${site.LAT.toFixed(4)}, ${site.LON.toFixed(4)}
+            <strong>Coordinates:</strong> <a href="${site.Link}">${site.LAT.toFixed(4)}, ${site.LON.toFixed(4)}</a>
           </p>
       </div>
       `;
