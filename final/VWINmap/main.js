@@ -1,3 +1,4 @@
+// JS for VWIN map
 // initialize the map:
 const map = L.map('map');
 map.setView([35.7362825, -82.5654144], 9);
@@ -66,6 +67,7 @@ function getPanelTemplate(site) {
             ${site.County.replace('_', ' ')} County
           </p>
           <p>${site.Description}</p>
+          ${site.Photo ? `<img src="${site.Photo}" alt="${site.Name}" style="max-width:100%; height:auto; margin-bottom: 10px;">` : ''}
           <p>
             <strong>Coordinates:</strong> <a href="${site.Link}">${site.LAT.toFixed(4)}, ${site.LON.toFixed(4)}</a>
           </p>
