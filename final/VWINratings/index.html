@@ -6,11 +6,61 @@
     <title>VWIN Site Ratings</title>
     <link rel="stylesheet" href="../utility-classes.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script> 
 </head>
 <body>
+    <header>
+    <!-- ============================================
+             NAVIGATION SECTION
+             ============================================ -->
+        <nav class="navigation">
+                    <div class="left">
+                        <a class="logo" href="https://eqilab.org/" title="← Environmental Quality Institute" aria-label="Environmental Quality Institute Monitoring water quality in streams and lakes throughout western North Carolina" rel="home">
+                            <div class="title-with-logo">
+                                <img src="https://eqilab.org/wp-content/uploads/logo-eqi.png" 
+                                class="neve-site-logo skip-lazy" 
+                                alt="Logo - Environmental Quality Institute" 
+                                data-variant="logo" 
+                                decoding="async" 
+                                fetchpriority="high">
+                                <div class="nv-title-tagline-wrap"></div>
+                            </div>
+                        </a>
+                    </div>
+                        <div class="nav-links">
+                            <a href="../index.html#section-1">About</a>
+                            <a href="../index.html#section-2">Find Your Site</a>
+                            <a href="../index.html#section-3">Site Map</a>
+                            <a href="../index.html#section-4">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="nav-links">
+                            <a href="https://eqilab.org">EQI Home</a>
+                            <a href="https://www.paypal.com/fundraiser/charity/2187024" class="btn primary">Donate</a>
+                        </div>
+                    </div>
+                    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+        </nav>
+    </header>
     <section id="dropdown" class="panel">
-                <h2>Compare the Latest VWIN Site Ratings:</h2>
+        <section id="ratings" class="panel">
+                <h1>VWIN Site Ratings</h1>
+                <p><b>VWIN site water quality scores</b> are calculated from three consecutive years of data, so for example, the 2020 score uses data from 2018, 2019, and 2020. These scores use data from orthophosphate, nitrate-nitrite-nitrogen, ammonia-nitrogen, turbidity, total suspended solids, and conductivity analyses. Letter grades are determined for each parameter and site using grading rules listed below. The grades are assigned an associated value (A=100, B=75, C=50, D=25). A maximum VWIN site score of 100 and a minimum of 25 are possible. Scores for sediment (turbidity and TSS only) and nutrients (orthophosphate, nitrates, and ammonia only) are also calculated.</p>
+                <p><b>VWIN ratings</b> are assigned as follows:</p>
+                <ul>
+                    <li>Excellent: 90-100 VWIN score</li>
+                    <li>Good: 80-89 VWIN score</li>
+                    <li>Average: 70-79 VWIN score</li>
+                    <li>Below Average: 60-69 VWIN score</li>
+                    <li>Poor: < 60 VWIN score</li>
+                </ul>
+                </br>
                 <div class="container" data-scroll="slide-right">
                     <button class="accordion">Buncombe County</button>
                     <div class="accordionPanel">
@@ -93,6 +143,7 @@
                     <p>Conductivity, also called specific conductance, measures the capacity of water to conduct an electrical current. It depends on the total concentration of positively and negatively charged molecules, or ions, that are dissolved in the water. Generally, ions come from underground minerals that dissolve in groundwater on its way to a stream. Because the water in runoff is generally “soft” water from rain or snowmelt, the conductivity of stream water usually decreases as the volume of water contributed by runoff to stream flow increases.</p>
                     </div>
                 </div>
+        </section>
     </section>    
 </body>
 </html>
