@@ -40,3 +40,19 @@ for (i = 0; i < acc.length; i++) {
     panel.classList.toggle("active");
   });
 }
+
+// Function to get query parameters by name
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const county = getQueryParam('county');
+    if (county) {
+        const heading = document.querySelector('#section-5 .heading-1.mega');
+        if (heading) {
+            heading.textContent = county;
+        }
+    }
+});
