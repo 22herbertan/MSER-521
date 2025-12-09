@@ -4,17 +4,12 @@
 
 #section-5 {
     background-image: url("..images/Frenchbroad.JPG");
+    padding-top: 100px;
 }
 
 #section-5 .cards {
     width: 60%;
     display: flex;
-    margin-left: 250px;
-}
-
-#section-5 img {
-    width: 700px;
-    height: auto;
 }
 
 #section-5 .btn.primary {
