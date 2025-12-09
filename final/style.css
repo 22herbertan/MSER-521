@@ -36,6 +36,15 @@ header {
     color: black;
 }
 
+.nav-links a {
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.nav-links a:hover {
+  transform: scale(1.07);
+}
+
 /* Hero section */
 .hero {
   background-image: url('images/Creek.jpg');
